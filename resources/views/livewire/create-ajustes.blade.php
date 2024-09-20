@@ -1,9 +1,6 @@
 
-<section class="bg-white py-20 lg:py-[120px]">
- <h1>dsadsdsdsdsds</h1>
- <h1>dsadsdsdsdsds</h1>
- <h1>dsadsdsdsdsds</h1>
- <h1>dsadsdsdsdsds</h1>
+<section class="bg-white py-20 lg:py-[120px]" style="margin-top: 100px;">
+
     <div class="container">
        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4">

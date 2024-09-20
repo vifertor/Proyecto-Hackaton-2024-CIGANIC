@@ -26,19 +26,20 @@
             </aside>
 
             <!-- Contenido Principal -->
-            <div class="flex-1 p-4" style="margin-left: 250px;"> <!-- Ajusta el valor según el ancho del sidebar -->
-                @if (isset($header))
-                    <header class="bg-white white:bg-white-800 white mb-4">
-                        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                            {{ $header }}
-                        </div>
-                    </header>
-                @endif
+                <div class="flex-1 p-4" style="margin-left: 250px;"> <!-- Ajusta el valor según el ancho del sidebar -->
+            @if (isset($header))
+                <header class="bg-white mb-4" style="margin-top: 80px;"> <!-- Margen superior aumentado -->
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endif
 
                 <!-- Page Content -->
                 <main>
                     {{ $slot }}
                 </main>
+
             </div>
         </div>
 
@@ -51,3 +52,4 @@
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     </body>
 </html>
+
