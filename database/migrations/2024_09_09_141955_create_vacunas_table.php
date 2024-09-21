@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('vacunas', function (Blueprint $table) {
             $table->id('Id_vacuna');
             $table->string('nombre_de_vacuna');
-            $table->string('Descripción')->nullable();;
-            $table->boolean('Estado')->default('true');;
+            $table->string('Descripción')->nullable();
+            $table->boolean('Estado')->default(true); // Cambiado 'true' a true (sin comillas)
             $table->timestamps();
-            //add delete_at colum
 
         });
     }

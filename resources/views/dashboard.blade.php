@@ -19,6 +19,7 @@
                         Esta es la información general del proyecto.
                     </p>
 
+
                     <!-- Acerca del Proyecto -->
                     <h4 class="mt-8 text-xl font-semibold">
                         Acerca de Nosotros y Nuestro Proyecto

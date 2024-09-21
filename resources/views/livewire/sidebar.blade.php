@@ -116,7 +116,7 @@
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{ route('ajustes') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="{{ route('vacunas') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <i class="fas fa-cogs fa-lg me-3"></i>
                             <span>Administración</span>
                         </a>
