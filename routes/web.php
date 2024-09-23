@@ -16,7 +16,7 @@ Route::redirect('/', '/dashboard');
 
 Route::get('/vacunas', [VacunaController::class, 'index']);
 
-
+Route::post('/vacunas/store', [VacunaController::class, 'store'])->name('vacunas.store');
 
 
 

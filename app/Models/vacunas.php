@@ -13,7 +13,7 @@ class vacunas extends Model
 
     protected $fillable = [
         'nombre_de_vacuna' ,
-        'descripcion',
+        'Descripción',
         'Estado'
     ];
 
