@@ -29,12 +29,12 @@
                 <div class="flex-1 p-4" style="margin-left: 250px;"> <!-- Ajusta el valor según el ancho del sidebar -->
             @if (isset($header))
                 <header class="bg-white mb-4" style="margin-top: 80px;"> <!-- Margen superior aumentado -->
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
+
                 </header>
             @endif
+            <nav>
 
+            </nav>
                 <!-- Page Content -->
                 <main>
                     {{ $slot }}

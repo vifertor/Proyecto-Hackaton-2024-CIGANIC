@@ -35,3 +35,21 @@
     margin-left: 80px;
     margin-top: 60px; /* Ajusta según la altura de tu navbar */
 }
+
+.text-verde {
+    color: #009201; /* Color verde */
+}
+.btn-login {
+    background-color: green; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cursor cambia a pointer */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Efecto suave en hover */
+}
+
+.btn-login:hover {
+    background-color: darkgreen; /* Cambia el fondo cuando se hace hover */
+}

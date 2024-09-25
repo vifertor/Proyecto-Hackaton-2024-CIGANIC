@@ -7,6 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tailwind CSS (for styling) -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -56,30 +58,32 @@
 <body class="font-sans antialiased font-flowbite">
     <div class="flex h-screen bg-gray-100">
         <!-- Sidebar -->
-        <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-80 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 sidebar" aria-label="Sidebar">
+        <<aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-80 h-full bg-white border-r border-gray-200 sidebar" aria-label="Sidebar">
             <div class="sidebar-content">
                 <!-- Menu Sections -->
                 <ul class="font-medium p-4">
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#" class="flex items-center p-2 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" style="color: #009201;">
                             <i class="fas fa-home fa-lg me-3"></i>
                             <span>Inicio</span>
                         </a>
+
+
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" id="toggle-animals">
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-green hover:bg-gray-100 dark:hover:bg-gray-700 group" id="toggle-animals"style="color: #009201;">
                             <i class="fas fa-paw fa-lg me-3"></i>
                             <span>Mis animales</span>
                         </a>
                         <ul class="submenu space-y-2 mt-2">
                             <li>
-                                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <i class="fas fa-cow fa-lg me-3"></i>
+                                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" style="color: #009201;">
+                                    <i class="fas fa-piggy-bank fa-lg me-3"></i>
                                     <span>Bobinos</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #009201;">
                                     <i class="fas fa-piggy-bank fa-lg me-3"></i>
                                     <span>Porsinos</span>
                                 </a>
@@ -87,39 +91,40 @@
                         </ul>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#" class="flex items-center p-2 text-verde rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" style="color: #009201;">
                             <i class="fas fa-book fa-lg me-3"></i>
                             <span>Documentación</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #009201;">
                             <i class="fas fa-info-circle fa-lg me-3"></i>
                             <span>Enfermedades</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #009201;">
                             <i class="fas fa-capsules fa-lg me-3"></i>
                             <span>Tratamiento</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #009201;">
                             <i class="fas fa-carrot fa-lg me-3"></i>
                             <span>Consulta alimentos</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{ route('dashboard') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="{{ route('dashboard') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #009201;">
                             <i class="fas fa-info-circle fa-lg me-3"></i>
                             <span>Acerca de nosotros</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{ route('vacunas') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="{{ route('dashboard') }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #009201;">
                             <i class="fas fa-cogs fa-lg me-3"></i>
                             <span>Administración</span>
+
                         </a>
                     </li>
                 </ul>
@@ -127,20 +132,20 @@
             <div class="sidebar-footer">
                 <ul class="space-y-2 font-medium p-4">
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #FDCB20;">
                             <i class="fas fa-question-circle fa-lg me-3"></i>
                             <span>Ayuda</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"style="color: #FDCB20;">
                             <i class="fas fa-address-book fa-lg me-3"></i>
                             <span>Contactos</span>
                         </a>
                     </li>
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <button type="submit" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group w-full text-left">
+                        <button type="submit" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group w-full text-left"style="color: #FF3B30;">
                             <i class="fas fa-sign-out-alt fa-lg me-3"></i>
                             <span>Log out</span>
                         </button>
@@ -152,20 +157,21 @@
 
         <div class="flex-1 flex flex-col ml-80">
             <!-- Navbar -->
-            <nav class="fixed top-0 left-80 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+            <nav class="fixed top-0 left-80 z-50 w-full bg-white border-b border-gray-200">
                 <div class="px-3 py-3 lg:px-5 lg:pl-3">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                                 <span class="sr-only">Open sidebar</span>
-                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+
                                     <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zm0-8.5a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 6.75z"></path>
                                 </svg>
                             </button>
-                            <a href="https://flowbite.com" class="flex ms-2 md:me-24">
-                                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                                <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">CIGANIC</span>
+                            <a href="dashboard" class="flex ms-2 md:me-24">
+                                <img src="imagen/SEGUNDO LOGO.png" class="h-8 me-3" alt="logo" />
+                                <img src="imagen/unnamed.png" class="h-4 me-1 mt-2" alt="logo" /> <!-- Ajusta el margen superior aquí -->
                             </a>
+
 
                         </div>
                         <div class="flex items-center space-x-6">
@@ -188,8 +194,7 @@
                                     <div id="dropdown-user" class="z-10 hidden absolute top-12 right-0 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" aria-labelledby="dropdown-user-button">
                                         <div class="px-4 py-3">
                                             <div>
-                                                <p class="text-sm font-medium text-gray-900 dark:text-white">{{ Auth::user()->name }}</p>
-                                                <p class="text-sm text-gray-500 dark:text-gray-400">{{ Auth::user()->email }}</p>
+
                                             </div>
                                         </div>
                                         <ul class="py-1" aria-labelledby="dropdown-user-button">

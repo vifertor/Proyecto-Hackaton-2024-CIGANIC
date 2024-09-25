@@ -1,9 +1,11 @@
 <?php
 use App\Http\Controllers\VacunaController;
-use App\Livewire\Vacuna;
+
 use Illuminate\Support\Facades\Route;
 use App\Livewire\CreateAjustes;
-use App\Models\vacunas;
+use App\Livewire\Vacunna\Vervacuna;
+use App\Livewire\Vacunna\CrearVacuna;
+use App\Livewire\Vacunna\EditarVacuna;
 
 //Route::get('/', function () {
    // return view('welcome');
@@ -11,12 +13,9 @@ use App\Models\vacunas;
 
 Route::redirect('/', '/dashboard');
 
-
-
-
-Route::get('/vacunas', [VacunaController::class, 'index']);
-
-Route::post('/vacunas/store', [VacunaController::class, 'store'])->name('vacunas.store');
+Route::get('/zzz',Vervacuna::class);
+Route::get('/crear', CrearVacuna::class);
+Route::get('/editarvacuna/{vacunaID}', EditarVacuna::class)->name('editarvacuna');
 
 
 
@@ -34,7 +33,6 @@ Route::middleware([
 
     Route::get('/ajustes', CreateAjustes::class)->name('ajustes');
 
-    Route::get('/vacunas', vacuna::class)->name('vacunas');
 
 
 });
