@@ -194,19 +194,20 @@
                                     <div id="dropdown-user" class="z-10 hidden absolute top-12 right-0 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" aria-labelledby="dropdown-user-button">
                                         <div class="px-4 py-3">
                                             <div>
-
+                                                <p class="text-sm font-medium text-gray-900 dark:text-white">{{ Auth::user()->name }}</p>
+                                                <p class="text-sm text-gray-500 dark:text-gray-400">{{ Auth::user()->email }}</p>
                                             </div>
                                         </div>
                                         <ul class="py-1" aria-labelledby="dropdown-user-button">
                                             <li>
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+
                                             </li>
 
                                             <div class="flex items-center space-x-4">
                                                 <!-- Updated User Settings Link -->
                                                 <a href="/user/profile" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                                     <i class="fas fa-user fa-lg me-2"></i>
-                                                    <span>Usuario</span>
+                                                    <span>Perfil</span>
                                                 </a>
                                             </div>
 
