@@ -206,7 +206,7 @@
                                                 <!-- Updated User Settings Link -->
                                                 <a href="/user/profile" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                                     <i class="fas fa-user fa-lg me-2"></i>
-                                                    <span>Usuario</span>
+                                                    <span>Usuarioo</span>
                                                 </a>
                                             </div>
 
