@@ -187,7 +187,7 @@
                             <div class="flex items-center ms-3">
                                 <div>
                                     <button id="dropdown-user-button" data-dropdown-toggle="dropdown-user" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
-                                        <span class="sr-only">Open user menu</span>
+                                        <span class="sr-only">Open user menus</span>
                                         <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo" />
                                     </button>
 
